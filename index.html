@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EduCare</title>
+    <link
+      rel="shortcut icon"
+      href="./images/logo/favicon.png"
+      type="image/x-icon"
+    />
     <!-- stylesheet -->
     <link rel="stylesheet" href="style.css" />
     <!-- Bootstrap CSS -->
@@ -24,13 +29,14 @@
     <header class="container-lg">
       <!-- navbar section -->
       <nav
-        class="navbar navbar-expand-lg d-flex flex-wrap align-items-center justify-content-center justify-content-md-between p-3 my-3"
+        class="navbar navbar-expand-lg d-flex flex-wrap align-items-center justify-content-sm-around justify-content-md-between py-3 my-3"
       >
         <a
           href="/"
-          class="navbar-brand d-flex align-items-center col-md-3 mb-2 mb-md-0 text-decoration-none fw-bolder fs-4 text-primary"
+          class="navbar-brand d-flex align-items-center col-md-3 mb-2 mb-md-0 text-decoration-none fw-bolder fs-4 text-primary c-logo"
         >
-          EduCare
+          <img src="./images/logo/logo.png" alt="" class="img-fluid" />
+          <span class="ps-1">EduCare</span>
         </a>
         <button
           class="navbar-toggler"
@@ -51,27 +57,26 @@
               <a href="#" class="nav-link px-4 link-dark">Home</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link px-4 link-dark">Courses</a>
+              <a href="#courses" class="nav-link px-4 link-dark">Courses</a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link px-4 link-dark">Explore</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link px-4 link-dark">Join</a>
+              <a href="#register" class="nav-link px-4 link-dark">Join</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link px-4 link-dark">Success</a>
+              <a href="#FAQ" class="nav-link px-4 link-dark">Queries</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link px-4 link-dark">Queries</a>
+              <a href="#Partners" class="nav-link px-4 link-dark">Partners</a>
             </li>
           </ul>
-
-          <div class="col-md-3 text-lg-end text-sm-center">
-            <button type="button" class="btn btn-outline-primary">
-              Register
-            </button>
-          </div>
+        </div>
+        <div class="collapse navbar-collapse col-md-3 text-lg-end text-sm-center justify-content-end" id="navbarTogglerDemo01">
+          <button type="button" class="btn btn-outline-primary">
+            Register
+          </button>
         </div>
       </nav>
     </header>
@@ -102,7 +107,7 @@
           </div>
           <div class="carousel-item">
             <img
-              src="./images/cover/cover-2.jpg"
+              src="./images/cover/cover-3.jpg"
               class="d-block w-100"
               alt="..."
             />
@@ -119,7 +124,7 @@
           </div>
           <div class="carousel-item">
             <img
-              src="./images/cover/cover-3.jpg"
+              src="./images/cover/cover-4.jpg"
               class="d-block w-100"
               alt="..."
             />
@@ -160,7 +165,7 @@
     <!-- Main section -->
     <main>
       <!-- Course Section -->
-      <section id="courses" class="container-lg text-center pt-3 my-4">
+      <section id="courses" class="container-lg text-center pt-3 my-5">
         <h1>Discover Our Popular Courses</h1>
         <p class="fs-5 my-3">
           Take the next step toward your personal and professional goals with
@@ -181,8 +186,8 @@
                 <h4>Fundamental Of UI/UX Design</h4>
                 <p>
                   This course emphasizes the understanding of designing for the
-                  user to foster improved product and delivery. You’ll learn how
-                  to complete the design process from beginning to end.
+                  user to foster improved product and delivery. You will learn
+                  how to complete the design process from beginning to end.
                 </p>
                 <p class="card-text text-primary fs-4 fw-bold">Price: 20$</p>
               </div>
@@ -305,7 +310,7 @@
       </section>
 
       <!-- Register now section -->
-      <section id="register" class="container-lg pt-5">
+      <section id="register" class="container-lg pt-5 mt-5">
         <div
           class="row justify-content-between align-items-center text-bg-primary rounded p-3 p-md-5 text-center"
         >
@@ -414,7 +419,7 @@
       </section>
 
       <!-- FAQ Section -->
-      <section class="container-lg my-5 pt-sm-5">
+      <section id="FAQ" class="container-lg my-5 pt-sm-5">
         <h1 class="fw-bold text-center py-3">Frequently Asked Questions</h1>
         <div class="row mt-4 justify-content-center">
           <div class="col-lg-8">
@@ -550,7 +555,7 @@
       </section>
 
       <!-- Company section -->
-      <section id="company" class="container-lg py-5 d-none d-lg-block">
+      <section id="Partners" class="container-lg py-5 d-none d-lg-block">
         <h1 class="fw-bold text-center">Trusted by over 800+ companies</h1>
         <div class="row row-cols-6 align-items-center mt-5">
           <div class="d-flex justify-content-center align-items-center">
@@ -577,15 +582,13 @@
 
     <!-- Footer section -->
     <footer class="container-fluid text-bg-dark text-center p-5 mt-5">
-      <h1>EduCare</h1>
+      <h1 class="pb-3">EduCare</h1>
       <p>
-        Office Level 2, ANZ Huq Eleven Square, Block H <br />Rd No. 11,
-        Dhaka 1213
+        Office Level 2, ANZ Huq Eleven Square, Block H <br />Rd No. 11, Dhaka
+        1213
       </p>
-      <a href="" class="mx-2 text-white text-decoration-none">Privacy Policy </a>|<a
-        href=""
-        class="mx-2 text-white text-decoration-none"
-      >
+      <a href="" class="mx-2 text-white text-decoration-none">Privacy Policy </a
+      >|<a href="" class="mx-2 text-white text-decoration-none">
         Terms of use</a
       >
       <div class="d-flex align-items-center justify-content-center gap-5 my-4">

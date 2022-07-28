@@ -1,6 +1,6 @@
 /* ------Slider------ */
 .carousel-item{
-    height: 87vh;
+    height: 80vh;
     min-height: 300px;
     background: no-repeat scroll center scroll;
     background-size: cover;
@@ -17,14 +17,25 @@
     background: #000;
     opacity: 0.5;
 }
-
+.carousel-item img{
+    height: 100%;
+    object-fit: cover;
+}
 .carousel-caption{
-    top: 235px;
-    padding-left: 100px;
-    padding-right: 100px;
+    margin-bottom: 5%;
+    padding: 0 10%;
+}
+.carousel-caption h5{
+    font-size: 3.5rem;
+    font-weight: 700px;
 }
 
-.carousel-caption h5{
-    font-size: 80px;
-    font-weight: 700px;
+@media only screen and (max-width: 767px){
+    
+    .carousel-caption{
+        margin: 2rem auto;
+    }
+    .carousel-caption h5{
+        font-size: 2.5rem;
+    }
 }

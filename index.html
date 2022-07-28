@@ -19,28 +19,54 @@
     <header class="container">
       <!-- navbar section -->
       <nav
-        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between p-3 my-3"
+        class="navbar navbar-expand-lg d-flex flex-wrap align-items-center justify-content-center justify-content-md-between p-3 my-3"
       >
         <a
           href="/"
-          class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-decoration-none fw-bolder fs-4 text-primary"
+          class="navbar-brand d-flex align-items-center col-md-3 mb-2 mb-md-0 text-decoration-none fw-bolder fs-4 text-primary"
         >
           EduCare
         </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul
+            class="navbar-nav col-12 col-md-auto mb-2 justify-content-center mb-md-0"
+          >
+            <li class="nav-item">
+              <a href="#" class="nav-link px-4 link-dark">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-4 link-dark">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-4 link-dark">Explore</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-4 link-dark">Join</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-4 link-dark">Success</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-4 link-dark">Queries</a>
+            </li>
+          </ul>
 
-        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="#" class="nav-link px-4 link-dark">Home</a></li>
-          <li><a href="#" class="nav-link px-4 link-dark">Courses</a></li>
-          <li><a href="#" class="nav-link px-4 link-dark">Explore</a></li>
-          <li><a href="#" class="nav-link px-4 link-dark">Join</a></li>
-          <li><a href="#" class="nav-link px-4 link-dark">Success</a></li>
-          <li><a href="#" class="nav-link px-4 link-dark">Queries</a></li>
-        </ul>
-
-        <div class="col-md-3 text-end">
-          <button type="button" class="btn btn-outline-primary">
-            Register
-          </button>
+          <div class="col-md-3 text-lg-end text-sm-center">
+            <button type="button" class="btn btn-outline-primary">
+              Register
+            </button>
+          </div>
         </div>
       </nav>
     </header>
@@ -48,9 +74,7 @@
     <section class="container">
       <div
         id="carouselExampleControls"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
+        class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
@@ -58,7 +82,7 @@
               class="d-block w-100"
               alt="..."
             />
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption">
               <h5>Get Started Digital Learning</h5>
               <p class="py-3">
                 It is a long established fact that a reader will be distracted
@@ -75,10 +99,11 @@
               class="d-block w-100"
               alt="..."
             />
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption">
               <h5>Learn without limits</h5>
               <p class="py-3">
-                Start, switch, or advance your career with Professional Certificates and Degrees.
+                Start, switch, or advance your career with Professional
+                Certificates and Degrees.
               </p>
               <button class="btn btn-lg btn-info text-white" type="submit">
                 Get Started
@@ -91,10 +116,11 @@
               class="d-block w-100"
               alt="..."
             />
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption">
               <h5>Get ready for an in-demand career</h5>
               <p class="py-3">
-                Break into a new field like information technology or data science. No prior experience necessary to get started..
+                Break into a new field like information technology or data
+                science. No prior experience necessary to get started..
               </p>
               <button class="btn btn-lg btn-info text-white" type="submit">
                 Get Started

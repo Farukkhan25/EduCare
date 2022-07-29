@@ -1,6 +1,6 @@
 /* ------logo------ */
 .c-logo img {
-  width: 75px;
+  width: 151px;
   height: 48px;
 }
 /* ------Slider------ */
@@ -41,7 +41,13 @@
   object-fit: cover;
   object-position: left;
 }
+#Explore img {
+  object-fit: cover;
+}
 @media only screen and (max-width: 767px) {
+  .c-logo img {
+    width: 75px;
+  }
   .carousel-item img {
     height: 100%;
   }
